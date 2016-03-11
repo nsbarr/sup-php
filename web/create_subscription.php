@@ -12,15 +12,15 @@ try
   $customer = \Stripe\Customer::create(array(
     'email' => $_POST['stripeEmail'],
     'source'  => $_POST['stripeToken'],
-    'plan' => 'weekly_box'
+    'plan' => 'EmployeeOfTheMonth'
   ));
 
-  header('Location: thankyou.html');
+  header('Location: nav.html');
   exit;
 }
 catch(Exception $e)
 {
-  header('Location:oops.html');
+  header('Location:nav.html');
   error_log("unable to sign up customer:" . $_POST['stripeEmail'].
     ", error:" . $e->getMessage());
 }
