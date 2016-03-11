@@ -29,5 +29,10 @@ $app->get('/success', function() use($app) {
   return $app['twig']->render('success.html');
 });
 
+$app->get('/error', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('error.html');
+});
+
 
 $app->run();

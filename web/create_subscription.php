@@ -20,7 +20,7 @@ try
 }
 catch(Exception $e)
 {
-  header('Location: https://employeeofthemonth.herokuapp.com/success');
+  header('Location: https://employeeofthemonth.herokuapp.com/error');
   error_log("unable to sign up customer:" . $_POST['stripeEmail'].
     ", error:" . $e->getMessage());
 }
