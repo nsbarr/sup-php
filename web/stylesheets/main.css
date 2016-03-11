@@ -38,3 +38,7 @@
 .lede p{
   font-family: 'Julius Sans One', sans-serif;
 }
+
+body {
+  max-width: 600px;
+}
