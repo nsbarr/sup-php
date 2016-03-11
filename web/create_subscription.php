@@ -15,12 +15,12 @@ try
     'plan' => 'EmployeeOfTheMonth'
   ));
 
-  header('Location: /success.html');
+  header('Location: https://employeeofthemonth.herokuapp.com/success');
   exit;
 }
 catch(Exception $e)
 {
-  header('Location: /success.html');
+  header('Location: https://employeeofthemonth.herokuapp.com/success');
   error_log("unable to sign up customer:" . $_POST['stripeEmail'].
     ", error:" . $e->getMessage());
 }
