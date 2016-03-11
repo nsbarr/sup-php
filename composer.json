@@ -4,7 +4,7 @@
     "monolog/monolog": "~1.7",
     "twig/twig": "^1.19",
     "symfony/twig-bridge": "^2.7",
-    "stripe/stripe-php": "2.*"
+    "stripe/stripe-php": "3.*"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
